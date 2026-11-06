@@ -139,7 +139,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   const searchBtn=document.getElementById('searchBtn');
   if(searchBtn) searchBtn.addEventListener('click',()=>searchWorkers(searchInput.value));
   if(searchInput) searchInput.addEventListener('input',e=>searchWorkers(e.target.value));
-  const params=new URLSearchParams(window.location.search);
+  const mt=document.getElementById('menuToggle');
+  if(mt){mt.addEventListener('click',()=>{const n=document.querySelector('.nav');if(n) n.style.display=n.style.display==='flex'?'none':'flex';});}
+});
   const cat=params.get('cat');
   if(cat){
     const sel=document.getElementById('filterCategory');
