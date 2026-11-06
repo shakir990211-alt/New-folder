@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jobs - EveryStovo.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Every<span>Stovo</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="jobs.html" class="active">Jobs</a>
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#workers">Workers</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-primary">Post Job</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="jobs-hero">
+  <div class="container">
+    <h1>Find Jobs Near You</h1>
+    <p>Browse open jobs from verified clients</p>
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="jobSearch" placeholder="Search jobs...">
+      <button class="btn btn-primary" id="jobSearchBtn">Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container jobs-layout">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <label>Category</label>
+        <select id="filterCategory">
+          <option value="all">All</option>
+          <option>Plumber</option><option>Electrician</option><option>Chef</option>
+          <option>Tailor</option><option>Driver</option><option>Mechanic</option>
+          <option>Mason</option><option>Painter</option><option>Beauty</option>
+          <option>Cleaner</option><option>Tutor</option><option>IT Repair</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Location</label>
+        <select id="filterLocation">
+          <option value="all">All</option>
+          <option>Karachi</option><option>Lahore</option><option>Islamabad</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Budget</label>
+        <select id="filterBudget">
+          <option value="all">All</option>
+          <option value="low">Under 5000</option>
+          <option value="mid">5000 - 15000</option>
+          <option value="high">Above 15000</option>
+        </select>
+      </div>
+    </aside>
+    <main>
+      <div class="jobs-list" id="jobsList"></div>
+    </main>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom">© 2026 EveryStovo. All rights reserved.</div>
+</footer>
+
+<nav class="bottom-nav">
+  <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="jobs.html" class="active"><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a>
+  <a href="index.html#categories"><i class="fa-solid fa-grid-2"></i><span>Categories</span></a>
+  <a href="index.html#workers"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

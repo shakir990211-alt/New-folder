@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EveryStovo.com - For all skilled workers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Every<span>Stovo</span></a>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="#categories">Categories</a>
+      <a href="#workers">Workers</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="btn btn-primary">Sign In</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Every Skill Deserves Income</h1>
+      <p>Connect with trusted skilled workers near you. Plumbers, electricians, chefs, tailors and more — all in one place.</p>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search skills, workers or jobs...">
+        <button class="btn btn-primary" id="searchBtn">Search</button>
+      </div>
+      <div class="hero-stats">
+        <div><strong>12+</strong><span>Categories</span></div>
+        <div><strong>10k+</strong><span>Workers</span></div>
+        <div><strong>5k+</strong><span>Jobs</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Skilled worker">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="container">
+    <h2 class="section-title">Browse Categories</h2>
+    <p class="section-sub">Find the right professional for any task</p>
+    <div class="categories-grid" id="categoriesGrid"></div>
+  </div>
+</section>
+
+<section class="section bg-light" id="workers">
+  <div class="container">
+    <h2 class="section-title">Featured Workers</h2>
+    <p class="section-sub">Top-rated professionals ready to help</p>
+    <div class="workers-grid" id="workersGrid"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <h2>Are you a skilled worker?</h2>
+    <p>Join EveryStovo and start earning from your skills today.</p>
+    <button class="btn btn-light">Join as Worker</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h3>Every<span>Stovo</span></h3>
+      <p>For all skilled workers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#">Plumber</a>
+      <a href="#">Electrician</a>
+      <a href="#">Chef</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 EveryStovo. All rights reserved.</div>
+</footer>
+
+<nav class="bottom-nav">
+  <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="jobs.html"><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a>
+  <a href="#categories"><i class="fa-solid fa-grid-2"></i><span>Categories</span></a>
+  <a href="#workers"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
